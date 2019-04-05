@@ -44,12 +44,26 @@
     "url": "https://github.com/ellisonleao/sharer.js/issues"
   },
   "scripts": {
-    "test": "eslint sharer.js",
-    "compress": "uglifyjs sharer.js --mangle > sharer.min.js"
+    "test": "eslint src/sharer.js",
+    "release": "rollup -c rollup.prod.js",
+    "build": "rollup -c rollup.dev.js"
   },
   "homepage": "https://ellisonleao.github.io/sharer.js/",
   "devDependencies": {
     "eslint": "^5.14.1",
-    "uglify-js": "^3.3.21"
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.5.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-serve": "^1.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.7.8"
   }
 }
