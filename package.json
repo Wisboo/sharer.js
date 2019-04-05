@@ -1,11 +1,11 @@
 {
-  "name": "sharer.js",
-  "version": "0.3.7",
-  "description": "Create your own social share buttons. No Jquery.",
-  "main": "sharer.js",
+  "name": "ngSharer",
+  "version": "1.0.0",
+  "description": "AngularJS lib to handle social share",
+  "main": "dist/ng-sharer.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ellisonleao/sharer.js.git"
+    "url": "git+https://github.com/Wisboo/sharer.js.git"
   },
   "keywords": [
     "social",
@@ -13,42 +13,22 @@
     "facebook",
     "twitter",
     "google",
-    "plus",
     "linkedin",
     "email",
     "telegram",
-    "whatsapp",
-    "telegram",
-    "viber",
-    "hackernews",
-    "vk",
-    "reddit",
-    "instapaper",
-    "pocket",
-    "stumbleupon",
-    "digg",
-    "flipboard",
-    "weibo",
-    "renren",
-    "blogger",
-    "myspace",
-    "baidu",
-    "okru",
-    "mailru",
     "evernote",
     "skype"
   ],
-  "author": "Ellison Leão <ellisonleao@gmail.com>",
+  "author": "Valentina Maldonado <vmaldonado@wisboo.com>",
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/ellisonleao/sharer.js/issues"
+    "url": ""
   },
   "scripts": {
-    "test": "eslint src/sharer.js",
     "release": "rollup -c rollup.prod.js",
     "build": "rollup -c rollup.dev.js"
   },
-  "homepage": "https://ellisonleao.github.io/sharer.js/",
+  "homepage": "https://github.com/Wisboo/sharer.js",
   "devDependencies": {
     "eslint": "^5.14.1",
     "@babel/core": "^7.1.2",
