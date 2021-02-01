@@ -1,6 +1,6 @@
 {
   "name": "ngSharer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "AngularJS lib to handle social share",
   "main": "dist/ng-sharer.js",
   "repository": {

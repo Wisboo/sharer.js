@@ -1,8 +1,20 @@
 {
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2017
+    },
+    "env": {
+        "browser": true
+    },
     "rules": {
         "indent": [
+            "error",
             2,
-            4
+            {
+                "ignoredNodes": [
+                    "TemplateLiteral"
+                ]
+            }
         ],
         "quotes": [
             2,
@@ -16,9 +28,6 @@
             2,
             "always"
         ]
-    },
-    "env": {
-        "browser": true
     },
     "extends": "eslint:recommended"
 }
