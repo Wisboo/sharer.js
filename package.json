@@ -16,8 +16,29 @@
     "linkedin",
     "email",
     "telegram",
+    "whatsapp",
+    "telegram",
+    "viber",
+    "hackernews",
+    "vk",
+    "reddit",
+    "instapaper",
+    "pocket",
+    "stumbleupon",
+    "digg",
+    "mashable",
+    "flipboard",
+    "weibo",
+    "renren",
+    "blogger",
+    "myspace",
+    "baidu",
+    "okru",
+    "mailru",
     "evernote",
-    "skype"
+    "skype",
+    "quora",
+    "trello"
   ],
   "author": "Valentina Maldonado <vmaldonado@wisboo.com>",
   "license": "GPLv3",
@@ -26,11 +47,13 @@
   },
   "scripts": {
     "release": "rollup -c rollup.prod.js",
-    "build": "rollup -c rollup.dev.js"
+    "build": "rollup -c rollup.dev.js",
+    "test": "eslint --fix sharer.js",
+    "compress": "uglifyjs sharer.js --mangle > sharer.min.js"
   },
   "homepage": "https://github.com/Wisboo/sharer.js",
   "devDependencies": {
-    "eslint": "^5.14.1",
+    "eslint": "^7.4.0",
     "@babel/core": "^7.1.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.1.0",
@@ -41,7 +64,9 @@
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-serve": "^1.0.0"
+    "rollup-plugin-serve": "^1.0.0",
+    "uglify-js": "^3.3.21",
+    "minimist": ">=0.2.1"
   },
   "dependencies": {
     "angular": "^1.7.8"
